@@ -11,13 +11,23 @@ const config = {
   prefix: "",
   theme: {
     container: {
-      center: true,
-      padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
       },
     },
     extend: {
+      fontSize: {
+        h1: ['2rem', { fontWeight: '700' }],
+        h2: ['1.5rem', { fontWeight: '700' }],
+        h3: ['1.125rem', { fontWeight: '500' }],
+        body: ['1rem', { fontWeight: '400' }],
+        paragraph: ['0.875rem', { fontWeight: '400' }],
+        label: ['0.875rem', { fontWeight: '500' }],
+        labelNormal: ['0.875rem', { fontWeight: '400' }],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

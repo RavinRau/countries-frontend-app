@@ -29,7 +29,7 @@ export function Card({
 }: ICardProps) {
   return (
     <CardUI className={cn('lg:w-1/5 m-3',className)} {...props}>
-      <Flag image={image} key={title}/>
+      <Flag image={image}/>
       {(title) && (
           <CardTitle className={'px-4 pt-6'}>{title}</CardTitle>
       )}

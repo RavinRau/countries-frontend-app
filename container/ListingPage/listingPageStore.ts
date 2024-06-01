@@ -1,14 +1,5 @@
 import {makeAutoObservable} from 'mobx';
-import Flag from "@/components/Flag";
-import * as React from "react";
-
-interface Country {
-    name: string;
-    flag: string;
-    population: number;
-    region: string;
-    capital: string;
-}
+import {Country} from "@/components/Card/ListCard";
 
 class ListingPageStore {
 
